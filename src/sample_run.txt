@@ -1,0 +1,105 @@
+================================================================================
+Demo 1: What is DENA and how is it different from MoE?
+================================================================================
+DENA Prototype Output
+---------------------
+Query: What is DENA and how is it different from MoE?
+
+Step 1: Subtask `research` handled mainly by Expert_Research (weight=0.62, confidence=0.82).
+Research analysis: treat the idea as a modular AI-system architecture. Define components formally, implement a minimal prototype, then evaluate routing accuracy, final-task accuracy, latency, cost, modular update ability, and comparison against dense, MoE-like, ensemble, and RAG baselines.
+- Supporting note from Expert_Definition (weight=0.38, confidence=0.86): Definition: DENA means Distributed Expert Neural Architecture: a proposed architecture where independently trained expert systems are connected through an orchestrator, router, aggregator, verifier, memory, and feedback loop.
+
+Step 2: Subtask `definition` handled mainly by Expert_Definition (weight=0.67, confidence=0.86).
+Definition: DENA means Distributed Expert Neural Architecture: a proposed architecture where independently trained expert systems are connected through an orchestrator, router, aggregator, verifier, memory, and feedback loop.
+- Supporting note from Expert_Research (weight=0.33, confidence=0.82): Research analysis: treat the idea as a modular AI-system architecture. Define components formally, implement a minimal prototype, then evaluate routing accuracy, final-task accuracy, latency, cost, modular update ability, and comparison against dense, MoE-like, ensemble, and RAG baselines.
+
+Estimated reliability: 0.84
+
+Verification score: 0.84
+Accepted: True
+Memory ID: mem_1777308491964
+
+Routing trace:
+- task_1 [research]
+  Expert_Research: probability=0.67, raw_score=2.79
+  Expert_Definition: probability=0.10, raw_score=0.93
+- task_2 [definition]
+  Expert_Definition: probability=0.71, raw_score=2.93
+  Expert_Research: probability=0.08, raw_score=0.79
+
+================================================================================
+Demo 2: Calculate 24 * 7 + 13
+================================================================================
+DENA Prototype Output
+---------------------
+Query: Calculate 24 * 7 + 13
+
+Subtask `math` handled mainly by Expert_Math (weight=0.77, confidence=0.92).
+Mathematical result: 24*7+13 = 181
+
+Estimated reliability: 0.82
+
+Verification score: 0.82
+Accepted: True
+Memory ID: mem_1777308491965
+
+Routing trace:
+- task_1 [math]
+  Expert_Math: probability=0.70, raw_score=2.78
+  Expert_Definition: probability=0.08, raw_score=0.59
+
+================================================================================
+Demo 3: How should I debug a Python function error?
+================================================================================
+DENA Prototype Output
+---------------------
+Query: How should I debug a Python function error?
+
+Subtask `code` handled mainly by Expert_Code (weight=0.74, confidence=0.78).
+Code analysis: start by isolating the failing input, reading the exact error message, checking variable types, and creating a minimal reproducible example. Then test one fix at a time.
+
+Estimated reliability: 0.69
+
+Verification score: 0.69
+Accepted: True
+Memory ID: mem_1777308491966
+
+Routing trace:
+- task_1 [code]
+  Expert_Code: probability=0.76, raw_score=3.13
+  Expert_Math: probability=0.06, raw_score=0.64
+
+================================================================================
+Demo 4: Design an experiment to compare DENA with dense and MoE models.
+================================================================================
+DENA Prototype Output
+---------------------
+Query: Design an experiment to compare DENA with dense and MoE models.
+
+Subtask `research` handled mainly by Expert_Research (weight=0.64, confidence=0.82).
+Research analysis: treat the idea as a modular AI-system architecture. Define components formally, implement a minimal prototype, then evaluate routing accuracy, final-task accuracy, latency, cost, modular update ability, and comparison against dense, MoE-like, ensemble, and RAG baselines.
+- Supporting note from Expert_Definition (weight=0.36, confidence=0.86): Definition: DENA means Distributed Expert Neural Architecture: a proposed architecture where independently trained expert systems are connected through an orchestrator, router, aggregator, verifier, memory, and feedback loop.
+
+Estimated reliability: 0.83
+
+Verification score: 0.83
+Accepted: True
+Memory ID: mem_1777308491966
+
+Routing trace:
+- task_1 [research]
+  Expert_Research: probability=0.73, raw_score=3.14
+  Expert_Definition: probability=0.10, raw_score=1.14
+
+
+STDERR:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/generated/interface/models.py", line 35986, in hydrate_crdt_from_proto
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/rpc/remote.py", line 747, in __call__
+  File "/tmp/tmp.vJDWZqkmKn/artifact_tool_v2-2.6.11/presentation_artifact_tool/rpc/client.py", line 150, in call
+presentation_artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.

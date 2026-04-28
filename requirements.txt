@@ -1,0 +1,3 @@
+# DENA v0 core prototype uses only Python standard library.
+# Optional: matplotlib is used for benchmark chart generation.
+matplotlib

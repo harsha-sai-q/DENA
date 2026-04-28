@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning"
+message: "If you use or discuss this work, please cite it as below."
+type: software
+authors:
+  - family-names: "Eada"
+    given-names: "Harsha Sai Reddy"
+email: "harshasaireddyind@gmail.com"
+year: 2026
+abstract: "DENA is a preliminary distributed expert AI architecture for modular expert routing, aggregation, verification, memory, and feedback-driven learning."
+keywords:
+  - artificial intelligence
+  - modular AI
+  - distributed expert neural architecture
+  - expert routing
+  - mixture of experts
+  - model orchestration
+  - AI architecture
+license: "MIT"
+repository-code: "https://github.com/harsha-sai-q/DENA-Distributed-Expert-Neural-Architecture"

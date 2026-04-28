@@ -1,0 +1,20 @@
+{"id": "q001", "query": "What is DENA and how is it different from MoE?", "expected_domains": ["definition", "research"], "expected_experts": ["Expert_Definition", "Expert_Research"], "expected_keywords": ["distributed expert neural architecture", "moe", "modular"]}
+{"id": "q002", "query": "Calculate 24 * 7 + 13", "expected_domains": ["math"], "expected_experts": ["Expert_Math"], "expected_keywords": ["181"], "expected_value": "181"}
+{"id": "q003", "query": "How should I debug a Python function error?", "expected_domains": ["code"], "expected_experts": ["Expert_Code"], "expected_keywords": ["debug", "error", "minimal"]}
+{"id": "q004", "query": "Design an experiment to compare DENA with dense and MoE models.", "expected_domains": ["research"], "expected_experts": ["Expert_Research"], "expected_keywords": ["benchmark", "dense", "moe"]}
+{"id": "q005", "query": "Define a router in DENA.", "expected_domains": ["definition", "research"], "expected_experts": ["Expert_Definition", "Expert_Research"], "expected_keywords": ["router", "select", "expert"]}
+{"id": "q006", "query": "Solve 10 + 5 * 3", "expected_domains": ["math"], "expected_experts": ["Expert_Math"], "expected_keywords": ["25"], "expected_value": "25"}
+{"id": "q007", "query": "Explain algorithm design for a Python API error.", "expected_domains": ["code"], "expected_experts": ["Expert_Code"], "expected_keywords": ["code", "error", "test"]}
+{"id": "q008", "query": "What is a dense model?", "expected_domains": ["definition"], "expected_experts": ["Expert_Definition"], "expected_keywords": ["dense", "parameters"]}
+{"id": "q009", "query": "Calculate (12 + 8) / 4", "expected_domains": ["math"], "expected_experts": ["Expert_Math"], "expected_keywords": ["5"], "expected_value": "5"}
+{"id": "q010", "query": "Explain why expert aggregation matters in DENA.", "expected_domains": ["research"], "expected_experts": ["Expert_Research"], "expected_keywords": ["aggregator", "expert", "outputs"]}
+{"id": "q011", "query": "Calculate 9 * 9 and explain what DENA is.", "expected_domains": ["math", "definition", "research"], "expected_experts": ["Expert_Math", "Expert_Definition", "Expert_Research"], "expected_keywords": ["81", "distributed expert neural architecture"], "expected_value": "81"}
+{"id": "q012", "query": "How can I compare routing accuracy and latency?", "expected_domains": ["research"], "expected_experts": ["Expert_Research"], "expected_keywords": ["routing", "accuracy", "latency"]}
+{"id": "q013", "query": "Write a plan to debug Java code.", "expected_domains": ["code"], "expected_experts": ["Expert_Code"], "expected_keywords": ["code", "debug", "test"]}
+{"id": "q014", "query": "What is MoE?", "expected_domains": ["definition"], "expected_experts": ["Expert_Definition"], "expected_keywords": ["mixture of experts", "router"]}
+{"id": "q015", "query": "Solve 100 / 4 - 7", "expected_domains": ["math"], "expected_experts": ["Expert_Math"], "expected_keywords": ["18"], "expected_value": "18"}
+{"id": "q016", "query": "How do I measure DENA verification score?", "expected_domains": ["research"], "expected_experts": ["Expert_Research"], "expected_keywords": ["verifier", "score", "benchmark"]}
+{"id": "q017", "query": "Describe aggregator in simple words.", "expected_domains": ["definition"], "expected_experts": ["Expert_Definition"], "expected_keywords": ["aggregator", "combines", "outputs"]}
+{"id": "q018", "query": "I have an algorithm bug in Python.", "expected_domains": ["code"], "expected_experts": ["Expert_Code"], "expected_keywords": ["code", "bug", "test"]}
+{"id": "q019", "query": "Calculate 2**5 + 1", "expected_domains": ["math"], "expected_experts": ["Expert_Math"], "expected_keywords": ["33"], "expected_value": "33"}
+{"id": "q020", "query": "Compare modular architecture vs dense model.", "expected_domains": ["research", "definition"], "expected_experts": ["Expert_Research", "Expert_Definition"], "expected_keywords": ["modular", "dense", "architecture"]}
