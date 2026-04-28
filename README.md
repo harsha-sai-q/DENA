@@ -1,4 +1,5 @@
 # DENA: Distributed Expert Neural Architecture
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19841838.svg)](https://doi.org/10.5281/zenodo.19841838)
 
 **DENA (Distributed Expert Neural Architecture)** is a preliminary modular AI architecture proposed by **Harsha Sai Reddy Eada**.
 
@@ -30,7 +31,11 @@ Suggested title:
 ```text
 DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning
 ```
+## DOI
 
+The DENA v0.1.1 research prototype and benchmark are archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.19841838
 Author:
 
 ```text
@@ -203,7 +208,9 @@ If you use or discuss this work, please cite:
   title={DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning},
   author={Eada, Harsha Sai Reddy},
   year={2026},
-  note={Preprint}
+  doi={10.5281/zenodo.19841838},
+  url={https://doi.org/10.5281/zenodo.19841838},
+  note={Preprint and software release}
 }
 ```
 
