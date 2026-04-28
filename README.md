@@ -1,9 +1,10 @@
 # DENA: Distributed Expert Neural Architecture
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19841838.svg)](https://doi.org/10.5281/zenodo.19841838)
 
-**DENA (Distributed Expert Neural Architecture)** is a preliminary modular AI architecture proposed by **Harsha Sai Reddy Eada**.
+**DENA (Distributed Expert Neural Architecture)** is a preliminary **system-level architecture and research framework** for distributed expert AI systems, proposed by **Harsha Sai Reddy Eada**.
 
-DENA is designed around the idea that AI systems can be built from independently trained expert subsystems coordinated through:
+DENA studies how independently trained expert subsystems can be coordinated through:
 
 - task decomposition
 - dynamic expert routing
@@ -12,30 +13,40 @@ DENA is designed around the idea that AI systems can be built from independently
 - memory
 - feedback-driven modular updates
 
-This repository contains the first public research package for DENA, including the research paper, prototype implementation, experiments, DENA-Bench v0 benchmark, diagrams, and benchmark results.
+> **Important positioning update:** DENA is not claimed to be a new neural primitive like attention, convolution, or recurrence. It is a system-level architecture/framework that formalizes and unifies patterns already emerging in model orchestration, tool-using agents, retrieval-augmented systems, Mixture-of-Experts-inspired systems, and feedback-driven pipelines.
 
-> **Important note:** DENA v0 is an early research prototype. The current implementation uses toy/rule-based experts and controlled benchmark tasks. These results demonstrate implementability and measurable cost-aware expert routing, but they do **not** prove superiority over production dense models or true Mixture-of-Experts systems.
+This repository contains the first public research package for DENA, including the research paper draft, prototype implementation, experiments, DENA-Bench v0 benchmark, diagrams, and benchmark results.
+
+> **Research status:** DENA v0 is an early prototype. The current implementation uses toy/rule-based experts and controlled benchmark tasks. These results demonstrate implementability and measurable cost-aware expert routing, but they do **not** prove superiority over production dense models or true Mixture-of-Experts systems.
+
+---
+
+## Current Paper Title
+
+```text
+DENA: A System-Level Architecture for Distributed Expert AI Systems
+```
+
+Earlier versions used the title:
+
+```text
+DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning
+```
+
+The newer title is more accurate because DENA is best positioned as a **system-level architecture/framework**, not a new low-level neural network primitive.
 
 ---
 
 ## Paper
 
-The paper is available in:
+The current public draft in this repository is:
 
 ```text
 paper/DENA_paper_Harsha_Sai_Reddy_Eada_v1.pdf
 ```
 
-Suggested title:
+A newer research-grade v0.2 paper version is being prepared with the improved system-level framing.
 
-```text
-DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning
-```
-## DOI
-
-The DENA v0.1.1 research prototype and benchmark are archived on Zenodo:
-
-https://doi.org/10.5281/zenodo.19841838
 Author:
 
 ```text
@@ -43,6 +54,36 @@ Harsha Sai Reddy Eada
 Independent Researcher
 Email: harshasaireddyind@gmail.com
 GitHub: https://github.com/harsha-sai-q
+```
+
+---
+
+## DOI
+
+The DENA research prototype and benchmark are archived on Zenodo:
+
+```text
+https://doi.org/10.5281/zenodo.19841838
+```
+
+---
+
+## Preprint Status
+
+A MetaArXiv submission was declined as **outside the scope of that preprint series**. This was a scope/category issue, not a technical peer-review rejection.
+
+The next intended target is a more suitable AI/CS venue, such as:
+
+```text
+arXiv cs.AI / cs.LG
+AI systems or agent workshops
+OpenReview workshop submissions
+```
+
+See:
+
+```text
+docs/PREPRINT_STATUS.md
 ```
 
 ---
@@ -82,6 +123,8 @@ figures/
 docs/
   EXPERIMENT_PLAN.md
   DENA_BENCHMARK_PROTOCOL.md
+  PREPRINT_STATUS.md
+  REVIEWER_RESPONSE.md
 ```
 
 ---
@@ -91,8 +134,8 @@ docs/
 Clone the repository:
 
 ```bash
-git clone https://github.com/harsha-sai-q/DENA-Distributed-Expert-Neural-Architecture.git
-cd DENA-Distributed-Expert-Neural-Architecture
+git clone https://github.com/harsha-sai-q/DENA.git
+cd DENA
 ```
 
 Run the prototype:
@@ -193,7 +236,7 @@ estimated latency
 
 In DENA-Bench v0, **DENA_top2** nearly matched the all-expert proxy quality while using lower estimated expert activation cost.
 
-This supports the early architectural claim that DENA can perform cost-aware expert selection in a controlled prototype setting.
+This supports the early claim that DENA can perform cost-aware expert selection in a controlled prototype setting.
 
 Again, this is a preliminary result using toy experts and should not be interpreted as proof that DENA outperforms real dense or MoE systems.
 
@@ -205,7 +248,7 @@ If you use or discuss this work, please cite:
 
 ```bibtex
 @misc{eada2026dena,
-  title={DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning},
+  title={DENA: A System-Level Architecture for Distributed Expert AI Systems},
   author={Eada, Harsha Sai Reddy},
   year={2026},
   doi={10.5281/zenodo.19841838},
@@ -213,8 +256,6 @@ If you use or discuss this work, please cite:
   note={Preprint and software release}
 }
 ```
-
-A DOI will be added after Zenodo/OSF publication.
 
 ---
 
@@ -233,15 +274,15 @@ CONTENT_LICENSE.md
 
 ---
 
-## Status
+## Roadmap
 
-This project is currently in the **preliminary research/prototype** stage.
+Current next goals:
 
-Next goals:
-
+- publish/update the research-grade v0.2 paper
+- seek arXiv endorsement for cs.AI or cs.LG
 - replace toy experts with neural experts
 - train a real router
 - improve the aggregator and verifier
 - expand DENA-Bench
 - compare against stronger dense, MoE, ensemble, RAG, and agent baselines
-- submit to preprint/workshop platforms for feedback
+- submit to AI/ML workshops for feedback
