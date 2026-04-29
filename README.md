@@ -1,6 +1,6 @@
 # DENA: Distributed Expert Neural Architecture
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19841838.svg)](https://doi.org/10.5281/zenodo.19841838)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19871653.svg)](https://doi.org/10.5281/zenodo.19871653)
 
 **DENA (Distributed Expert Neural Architecture)** is a preliminary **system-level architecture and research framework** for distributed expert AI systems, proposed by **Harsha Sai Reddy Eada**.
 
@@ -13,39 +13,25 @@ DENA studies how independently trained expert subsystems can be coordinated thro
 - memory
 - feedback-driven modular updates
 
-> **Important positioning update:** DENA is not claimed to be a new neural primitive like attention, convolution, or recurrence. It is a system-level architecture/framework that formalizes and unifies patterns already emerging in model orchestration, tool-using agents, retrieval-augmented systems, Mixture-of-Experts-inspired systems, and feedback-driven pipelines.
-
-This repository contains the first public research package for DENA, including the research paper draft, prototype implementation, experiments, DENA-Bench v0 benchmark, diagrams, and benchmark results.
+This repository contains the public research package for DENA, including the research paper, prototype implementation, experiments, DENA-Bench v0 benchmark, diagrams, and benchmark results.
 
 > **Research status:** DENA v0 is an early prototype. The current implementation uses toy/rule-based experts and controlled benchmark tasks. These results demonstrate implementability and measurable cost-aware expert routing, but they do **not** prove superiority over production dense models or true Mixture-of-Experts systems.
 
 ---
 
-## Current Paper Title
+## Current Paper
+
+Latest title:
 
 ```text
 DENA: A System-Level Architecture for Distributed Expert AI Systems
 ```
 
-Earlier versions used the title:
+Latest research-grade version:
 
 ```text
-DENA: A Preliminary Distributed Expert Neural Architecture for Modular Expert Routing and Feedback-Driven Learning
+paper/DENA_paper_v0_3.pdf
 ```
-
-The newer title is more accurate because DENA is best positioned as a **system-level architecture/framework**, not a new low-level neural network primitive.
-
----
-
-## Paper
-
-The current public draft in this repository is:
-
-```text
-paper/DENA_paper_Harsha_Sai_Reddy_Eada_v1.pdf
-```
-
-A newer research-grade v0.2 paper version is being prepared with the improved system-level framing.
 
 Author:
 
@@ -60,30 +46,16 @@ GitHub: https://github.com/harsha-sai-q
 
 ## DOI
 
-The DENA research prototype and benchmark are archived on Zenodo:
+Latest version DOI:
+
+```text
+https://doi.org/10.5281/zenodo.19871653
+```
+
+Concept DOI for all versions:
 
 ```text
 https://doi.org/10.5281/zenodo.19841838
-```
-
----
-
-## Preprint Status
-
-A MetaArXiv submission was declined as **outside the scope of that preprint series**. This was a scope/category issue, not a technical peer-review rejection.
-
-The next intended target is a more suitable AI/CS venue, such as:
-
-```text
-arXiv cs.AI / cs.LG
-AI systems or agent workshops
-OpenReview workshop submissions
-```
-
-See:
-
-```text
-docs/PREPRINT_STATUS.md
 ```
 
 ---
@@ -92,8 +64,8 @@ docs/PREPRINT_STATUS.md
 
 ```text
 paper/
-  DENA_paper_Harsha_Sai_Reddy_Eada_v1.pdf
-  DENA_paper_source_package_v1.zip
+  DENA_paper_v0_3.pdf
+  DENA_paper_v0_3_source.zip
 
 src/
   dena_prototype.py
@@ -115,7 +87,7 @@ benchmarks/
     benchmark_details.csv
 
 figures/
-  dena_architecture_diagram.png
+  dena_system_architecture_framework.png
   quality_score_chart.png
   cost_chart.png
   routing_f1_chart.png
@@ -123,8 +95,6 @@ figures/
 docs/
   EXPERIMENT_PLAN.md
   DENA_BENCHMARK_PROTOCOL.md
-  PREPRINT_STATUS.md
-  REVIEWER_RESPONSE.md
 ```
 
 ---
@@ -251,9 +221,9 @@ If you use or discuss this work, please cite:
   title={DENA: A System-Level Architecture for Distributed Expert AI Systems},
   author={Eada, Harsha Sai Reddy},
   year={2026},
-  doi={10.5281/zenodo.19841838},
-  url={https://doi.org/10.5281/zenodo.19841838},
-  note={Preprint and software release}
+  doi={10.5281/zenodo.19871653},
+  url={https://doi.org/10.5281/zenodo.19871653},
+  note={Version 0.3}
 }
 ```
 
@@ -278,8 +248,7 @@ CONTENT_LICENSE.md
 
 Current next goals:
 
-- publish/update the research-grade v0.2 paper
-- seek arXiv endorsement for cs.AI or cs.LG
+- prepare arXiv submission under cs.AI or cs.LG
 - replace toy experts with neural experts
 - train a real router
 - improve the aggregator and verifier
