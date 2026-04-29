@@ -243,15 +243,3 @@ CONTENT_LICENSE.md
 ```
 
 ---
-
-## Roadmap
-
-Current next goals:
-
-- prepare arXiv submission under cs.AI or cs.LG
-- replace toy experts with neural experts
-- train a real router
-- improve the aggregator and verifier
-- expand DENA-Bench
-- compare against stronger dense, MoE, ensemble, RAG, and agent baselines
-- submit to AI/ML workshops for feedback
